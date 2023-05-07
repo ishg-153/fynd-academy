@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik&family=Sacramento&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+#heading {
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    border: solid #0081a7 0.05rem;
+    padding: 0;
+    box-shadow: 0rem 0.05rem 0.5rem -0.05rem #9aa7ab;
+}
+
+nav > a {
+    padding: 1.4rem;
+    color: #252525;
+    text-decoration-line: none;
+    font-family: 'Rubik', sans-serif;
+    transition: background-color 0.5s ease-in;
+}
+
+nav > a:hover {
+    background-color: #fed9b7;
+}
+
+#meet-me {
+    display: flex;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5% 1% 5% 10%;
+}
+
+#hero-text {
+    font-family: 'Rubik', sans-serif;
+}
+
+#info > p {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+#hero-sub-text {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+#hero-img {
+    width: 25%;
+    height: fit-content;
+    border-radius: 50%;
+    margin: 5% 10% 5% 1%;
+}
+
+#tech h2 {
+    font-family: 'Rubik', sans-serif;
+    margin: 3rem;
+}
+
+#tech-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+#tech-stacks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 0.5fr));
+    gap: 3rem;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-item p, #tech-cta p{
+    font-family: 'Poppins', sans-serif;
+}
+
+#tech-cta input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: none;
+    outline: solid #ff786e 0.05rem;
+    background-color: #fed9b7;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all 0.6s ease-in-out;
+}
+
+#tech-cta input:hover {
+    background-color: #f07067da;
+}
+
+#contact-me {
+    margin: 10rem 0;
+}
+
+#contact-me h2 {
+    font-family: 'Rubik', sans-serif;
+    margin: 3rem;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: solid #7d7d7d70 0.05rem;
+}
+
+#code.material-symbols-rounded {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer > p {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 0;
+}
+
+#heart.material-symbols-rounded {
+    color: rgb(170, 0, 0);
+    padding: 1rem;
+    text-align: center;
+}

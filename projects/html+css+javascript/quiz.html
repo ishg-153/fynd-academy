@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[url(https://source.unsplash.com/h2VrZPWLhIU)]">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookish</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./script.js">
+        displayQuestion();
+    </script>
+    
+    <link rel="stylesheet" type="text/tailwindcss" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="my-3 text-2xl text-zinc-100 text-center align-middle">bookish</h1>
+    </header>
+    <div class="py-2 mx-16 my-1 backdrop-blur-sm text-center">
+        <p id="question" class="text-zinc-100 text-lg">
+            
+        </p>
+        <div id="answers" class="mx-40 my-5 grid grid-cols-2 gap-y-8 place-items-center">
+            
+        </div>
+        <button onclick="nextQuestion()" type="submit" class="px-2 py-1 rounded-full align-middle text-md font-semibold text-zinc-200 bg-amber-800 hover:shadow-md hover:shadow-anber-700 hover:bg-amber-900">next</button>
+    </div>
+    
+</body>
+</html>

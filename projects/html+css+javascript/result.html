@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[url(https://source.unsplash.com/h2VrZPWLhIU)]">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookish</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        const type = localStorage.getItem("genre")
+        console.log(type)
+        const displayResult = () => {
+            if (type === 'Productivity'){
+                document.querySelector('h2').innerHTML = 'You are on a mission to become the best version of yourself.';
+                document.getElementById('book').onclick = location.href="https://www.crossword.in/collections/non-fiction-top-50";
+            }else if (type === 'Romance'){
+                document.querySelector('h2').innerHTML = 'You are a Romantic.';
+                document.getElementById('book').onclick = location.href="https://www.crossword.in/search?filter.p.product_type=&options%5Bprefix%5D=last&q=romance&sort=best-selling&type=product";
+            }else if (type === 'Fiction'){
+                document.querySelector('h2').innerHTML = 'You are always ready to dive into an imaginative world.';
+                document.getElementById('book').onclick = location.href="https://www.crossword.in/collections/sci-fi-and-fantasy";
+            }else if (type === 'Mythology'){
+                document.querySelector('h2').innerHTML = 'You like all things history.';
+                document.getElementById('book').onclick = location.href="https://www.crossword.in/search?filter.p.product_type=&options%5Bprefix%5D=last&q=mythology&sort=best-selling&type=product";
+            }
+}
+    </script>
+    
+    <link rel="stylesheet" type="text/tailwindcss" href="style.css">
+</head>
+<body onload="displayResult()">
+    <header>
+        <h1 class="my-3 text-2xl text-zinc-100 text-center align-middle">bookish</h1>
+    </header>
+    <div class="py-40 mx-10 my-9 backdrop-blur-sm text-center">
+        <h2 class="py-2 text-xl text-zinc-100"></h2>
+        <p class="py-2 text-zinc-100">Here's a selection of books for you</p>
+
+        <button id="book" onclick="" type="submit" class="px-2 py-1 rounded-full align-middle text-md font-semibold text-zinc-200 bg-amber-800 hover:shadow-md hover:shadow-anber-700 hover:bg-amber-900">Check them out</button>
+    </div>
+    
+</body>
+</html>

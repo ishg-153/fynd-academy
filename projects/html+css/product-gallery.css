@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rubik&family=Sacramento&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+#heading {
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    border: solid #0081a7 0.05rem;
+    padding: 0;
+    box-shadow: 0rem 0.05rem 0.5rem -0.05rem #9aa7ab;
+}
+
+nav > a {
+    padding: 1.4rem;
+    color: #252525;
+    text-decoration-line: none;
+    font-family: 'Rubik', sans-serif;
+    transition: background-color 0.5s ease-in;
+}
+
+nav > a:hover {
+    background-color: #fed9b7;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+.card {
+    grid-template-columns: repeat(3, minmax(0, 1.5fr));
+    align-items: center;
+    position: relative;
+    display: grid;
+    gap: 5%;
+}
+  
+.card .card-item {
+    position: relative;
+    box-shadow: 0rem 0.05rem 0.5rem -0.05rem #9aa7ab;
+    transition: 0.6s ease-in-out all;
+}
+.card img {
+    height: 240px;
+    width: 100%;
+    transition: 0.6s ease-in-out all;
+}
+  
+.card .card-details {
+    position: absolute;
+    padding: 10px 5px;
+    bottom: 0px;
+    opacity: 0;
+    transition: 0.4s ease-in-out all;
+}
+  
+.card-details h1 {
+    font-size: 18px;
+    margin: 2px 0;
+    font-family: 'Rubik', sans-serif;
+}
+.card-details p {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+.card-item:hover {
+    height: 300px;
+    transform: scale(1.05);
+}
+
+.card-item:hover .card-details {
+    opacity: 1;
+    bottom: 10px;
+}
+  
+.card-item:hover img {
+    transform: scale(1);
+}
+
+#space-eater {
+  height: 4rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: solid #7d7d7d70 0.05rem;
+}
+
+#code.material-symbols-rounded {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer > p {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem 0;
+}
+
+#heart.material-symbols-rounded {
+    color: rgb(170, 0, 0);
+    padding: 1rem;
+    text-align: center;
+}
